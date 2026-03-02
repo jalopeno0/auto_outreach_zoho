@@ -22,13 +22,14 @@ client_secret*.json
 credentials*.json
 secrets*.json
 
-# ==============================
-# Project Data (PRIVATE)
-# ==============================
-outreach_output/
-email_list.xlsx
-private_*.xlsx
+# Excel contact lists (private)
+*.xlsx
+*.xls
 *.xlsb
+
+# Allow the public example template
+!examples/
+!examples/email_list_example.xlsx
 
 # ==============================
 # Logs
