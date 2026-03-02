@@ -16,27 +16,37 @@ Automated email draft creation and sending pipeline using Zoho Mail API.
 - get_account_id.py: Retrieve Zoho account ID
 - examples/: Sample data for testing
 
-## Setup
+## General Setup (Installation guide for python, VSCODE and API is in the next part)
 
 ### 1. Clone
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
-cd REPO_NAME
+git clone https://github.com/jalopeno0/auto_outreach_zoho.git
+cd auto_outreach_zoho
 ```
 
-### 2. Create virtual environment
+### 2. Create virtual environment (Do this in VSCODE terminal: easier)
+Mac / Linux:
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 ```
+Windows (PowerShell):
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+You should now see (.venv) in your terminal.
 ### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Configure environment variables
+### 4. Configure Zoho Credentials
+1. Copy .env.example
 
-Create a .env file in the project root:
+2. Rename it to .env
+
+3. Fill in your own Zoho credentials
 ```bash
 ZOHO_CLIENT_ID=
 ZOHO_CLIENT_SECRET=
@@ -44,6 +54,14 @@ ZOHO_REFRESH_TOKEN=
 ZOHO_ACCOUNT_ID=
 ```
 ### 5. Run
+Use the provided template:
+```bash
+examples/email_list_example.xlsx
+```
+Your real file must:
+- Be named: email_list.xlsx
+- Be placed in the project root
+- Contain the required columns
 ```bash
 python auto_outreach.py
 ```
