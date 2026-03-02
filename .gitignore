@@ -1,0 +1,53 @@
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ==============================
+# Environment / Secrets
+# ==============================
+.env
+.env.*
+token.json
+client_secret*.json
+credentials*.json
+secrets*.json
+
+# ==============================
+# Project Data (PRIVATE)
+# ==============================
+outreach_output/
+email_list.xlsx
+private_*.xlsx
+*.xlsb
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# IDE
+# ==============================
+.vscode/
+.idea/
